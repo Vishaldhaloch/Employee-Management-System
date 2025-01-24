@@ -52,11 +52,13 @@ This layer performs operations such as:
 1. Clone the repository:
    ```bash
    git clone <repository-url>
+   
 2. Navigate to the project directory:
-   '''bash
-   cd employee-management-system
-3. Run the application:
-   '''bash
+   
+    cd employee-management-system
+   
+4. Run the application:
+
    python emp.py
    
 Example Usage
