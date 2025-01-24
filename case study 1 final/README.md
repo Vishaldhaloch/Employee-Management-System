@@ -2,175 +2,62 @@
 
 A simple **Employee Management System** implemented in Python. This project demonstrates a basic three-tier architecture, including a Presentation Layer, Backend Layer, and Business Logic Layer.
 
----
-
 ## Features
 
-- **Add Employees**: Insert new employee records.
+- **Add Employees**: Insert new employee records with ID, name, salary, and contact.
 - **View Records**: Display all employee data.
 - **Search Employees**:
   - By ID
-  - By Name (supports partial match)
+  - By Name (supports partial matches)
   - By Contact
   - By Salary Range
 - **Delete Employees**: Remove an employee by their ID.
 - **Sort Records**:
   - By Salary (Ascending/Descending)
   - By Name (Ascending/Descending)
-
----
-
+  - 
 ## File Structure
 
 - **`emp.py`**: Presentation Layer (handles input/output and menu navigation).
 - **`employee.py`**: Backend Layer (defines the `Employee` class and its attributes).
 - **`service.py`**: Business Logic Layer (implements core functionalities such as adding, searching, and sorting).
 
----
+## How It Works
 
-## How to Run
+### 1. Presentation Layer (`emp.py`)
+This is the user interface. It provides a menu-driven system where users can:
+- Add a new employee.
+- View all records.
+- Search, delete, or sort records using various criteria.
+- Exit the program.
 
+### 2. Backend Layer (`employee.py`)
+This defines the `Employee` class with:
+- Attributes: `id`, `name`, `salary`, `contact`.
+- Getter and setter methods for encapsulation.
+- A `__str__` method for string representation.
+
+### 3. Business Logic Layer (`service.py`)
+This layer performs operations such as:
+- Adding employees to an in-memory list (`emp_list`).
+- Searching and sorting employee records.
+- Deleting employees by ID.
+
+## How to Run the Project
+
+### Prerequisites
+- Python 3.x installed on your system.
+
+### Steps
 1. Clone the repository:
    ```bash
    git clone <repository-url>
-2. Navigate to the project folder:
-
-cd employee-management-system
-
-3. Run the Program:
-   python emp.py
-
-
-Here's a detailed explanation of your code and the steps to create a GitHub repository with a README.md file for this project.
-
-Project Explanation
-This project is a simple Employee Management System in Python. It is divided into three layers, following a basic three-tier architecture:
-
-Presentation Layer (emp.py)
-
-Acts as the user interface.
-Provides a menu-driven interface for the user to interact with the system.
-Handles input and output operations.
-Backend Layer (employee.py)
-
-Defines the Employee class.
-Contains attributes (id, name, salary, contact) and their getter and setter methods.
-Includes a __str__ method for string representation of the Employee object.
-Business Logic Layer (service.py)
-
-Implements the Service class.
-Contains all the core functionalities of the system, such as:
-Adding employees.
-Viewing employee records.
-Searching by various criteria (e.g., name, ID, salary range).
-Sorting employee records (by name or salary, in ascending or descending order).
-Deleting employees.
-Key Functionalities
-Insert Record: Adds a new employee to the system. Ensures no duplicate IDs are added.
-View Records: Displays all employee records.
-Search:
-By ID: Finds an employee by their ID.
-By Name: Finds employees with a matching or partial name.
-By Contact: Finds employees by their contact information.
-By Salary Range: Finds employees within a specified salary range.
-Delete: Removes an employee by their ID.
-Sorting:
-By Salary (Ascending/Descending).
-By Name (Ascending/Descending).
-Steps to Create a GitHub Repository
-Create a Repository on GitHub
-
-Go to GitHub and log in.
-Click the New button to create a new repository.
-Provide a repository name, e.g., employee-management-system.
-Add a description: "A simple employee management system implemented in Python."
-Initialize the repository with a README.md file.
-Organize Your Code
-
-Create a folder on your local machine, e.g., employee-management-system.
-Inside the folder, create three files:
-emp.py: Contains the presentation layer.
-employee.py: Contains the backend layer.
-service.py: Contains the business logic layer.
-Create a README.md file to document the project.
-Push the Code to GitHub
-
-Open a terminal and navigate to the project folder.
-Initialize a git repository:
-bash
-Copy
-Edit
-git init
-Add the files to the staging area:
-bash
-Copy
-Edit
-git add .
-Commit the changes:
-bash
-Copy
-Edit
-git commit -m "Initial commit"
-Add the remote repository URL:
-bash
-Copy
-Edit
-git remote add origin <repository-url>
-Push the code:
-bash
-Copy
-Edit
-git branch -M main
-git push -u origin main
-README File
-Here’s the content for the README.md file:
-
-markdown
-Copy
-Edit
-# Employee Management System
-
-A simple **Employee Management System** implemented in Python. This project demonstrates a basic three-tier architecture, including a Presentation Layer, Backend Layer, and Business Logic Layer.
-
----
-
-## Features
-
-- **Add Employees**: Insert new employee records.
-- **View Records**: Display all employee data.
-- **Search Employees**:
-  - By ID
-  - By Name (supports partial match)
-  - By Contact
-  - By Salary Range
-- **Delete Employees**: Remove an employee by their ID.
-- **Sort Records**:
-  - By Salary (Ascending/Descending)
-  - By Name (Ascending/Descending)
-
----
-
-## File Structure
-
-- **`emp.py`**: Presentation Layer (handles input/output and menu navigation).
-- **`employee.py`**: Backend Layer (defines the `Employee` class and its attributes).
-- **`service.py`**: Business Logic Layer (implements core functionalities such as adding, searching, and sorting).
-
----
-
-## How to Run
-
-1. Clone the repository:
-   ```bash
-   git clone <repository-url>
-2. Navigate to the project folder:
-   
+2. Navigate to the project directory:
+   '''bash
    cd employee-management-system
-4. Run the program:
-   
+3. Run the application:
+   '''bash
    python emp.py
-
-
    
 Example Usage
 Menu Options
